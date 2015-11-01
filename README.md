@@ -1,0 +1,1 @@
+A simplistic MySQL API for python with a fluent interface. 
