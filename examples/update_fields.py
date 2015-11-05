@@ -7,7 +7,7 @@ import os
 import sys
 import time
 import subprocess
-import mysqlflow
+import mysqlflow.mysqlflow as mysqlflow
 
 
 ###############################################################################
