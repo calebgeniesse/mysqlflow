@@ -88,9 +88,7 @@ class MySQLFlow:
         if self._output is None or not len(self._output):
             return None
         results = [l.split('\t') for l in self._output.split('\n')]
-        ordered_results = []
-        for idx, result in enumerate(results):
-            ordered_results.append(dict(zip(results.pop(0), results.pop(0))))
+        ordered_results = [dict(zip(results[0], r)) for r in results[1:]]
         return ordered_results    
         
     def USE(self, database):
